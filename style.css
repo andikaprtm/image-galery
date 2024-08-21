@@ -29,11 +29,6 @@ body {
   text-align: center;
 }
 
-.content {
-  height: 2000px; /* Untuk memberi efek scroll */
-  padding: 20px;
-}
-
 .container {
   width: 500px;
   margin: 10px auto;
