@@ -4,9 +4,34 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #ccc;
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(239, 198, 246); /* Warna background */
+  z-index: 10; /* Memastikan header di atas konten lainnya */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+h2,
+h5 {
+  color: #e85e48;
+  /* background-color: rgb(240, 175, 250); */
   text-align: center;
+}
+
+#ig {
+  max-width: 3%;
+}
+
+body {
+  background-color: #fdb7b7;
+  text-align: center;
+}
+
+.content {
+  height: 2000px; /* Untuk memberi efek scroll */
+  padding: 20px;
 }
 
 .container {
@@ -29,6 +54,14 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   grid-gap: 10px;
+  padding: 10px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Opsional, jika ingin sudut gambar melengkung */
 }
 
 .thumb {
@@ -57,6 +90,13 @@ body {
 
 .active {
   opacity: 0.5;
+}
+
+#thumbnailContainer img {
+  max-width: 100px;
+  height: auto;
+  margin: 10px;
+  border: 2px solid #ccc;
 }
 
 @media (max-width: 600px) {
